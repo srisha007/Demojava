@@ -52,6 +52,7 @@ public class Login {
         //driverwait.until(ExpectedConditions.presenceOfElementLocated(By.id("geoLocPopUp")));
         driverwait.until(ExpectedConditions.presenceOfElementLocated(By.className("zh-customers")));
         driver.findElement(By.className("zh-customers")).click();
+        log.info("2nd test");
 	}
 	
 	@AfterMethod
