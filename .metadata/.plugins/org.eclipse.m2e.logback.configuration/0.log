@@ -1786,3 +1786,7 @@ Caused by: org.eclipse.aether.transfer.ArtifactNotFoundException: Could not find
 2020-03-25 12:26:48,939 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2020-03-25 12:26:48,940 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\SONY\workspace\mymaveen\src\test\resources
 2020-03-27 11:37:21,555 [Worker-3] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2020-03-27 12:46:56,986 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-03-27 12:46:57,002 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-03-27 12:46:57,049 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-03-27 12:46:57,049 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\SONY\workspace\mymaveen\src\test\resources
