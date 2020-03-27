@@ -1,0 +1,34 @@
+package fmaven.mymaveen;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.PageLoadStrategy;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\SONY\\workspace\\mymaveen\\resources\\executables\\chromedriver.exe");
+        ChromeOptions options = new ChromeOptions();
+        options.setPageLoadStrategy(PageLoadStrategy.EAGER);
+        ChromeDriver driver=new ChromeDriver(options);
+        driver.get("https://www.naukri.com/browse-jobs");
+        driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        WebDriverWait driverwait= new  WebDriverWait(driver,30);
+        driverwait.until(ExpectedConditions.presenceOfElementLocated(By.id("geoLocPopUp")));
+        driverwait.until(ExpectedConditions.invisibilityOfElementLocated(By.id("block")));
+        driver.findElement(By.id("block")).click();
+        
+        
+    }
+}

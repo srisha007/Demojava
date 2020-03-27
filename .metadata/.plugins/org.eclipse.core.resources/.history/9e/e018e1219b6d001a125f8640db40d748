@@ -1,0 +1,28 @@
+package fmaven.mymaveen;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\SONY\\workspace\\mymaveen\\resources\\executables\\chromedriver.exe");
+        ChromeDriver driver=new ChromeDriver();
+        driver.get("https://www.naukri.com/browse-jobs");
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        WebDriverWait driverwait= new  WebDriverWait(driver,30);
+        driverwait.until(ExpectedConditions.invisibilityOfElementLocated(By.className("mTxt")));
+        driver.findElement(By.className("mTxt")).click();
+        
+        
+    }
+}

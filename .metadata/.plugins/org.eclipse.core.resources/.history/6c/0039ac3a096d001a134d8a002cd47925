@@ -1,0 +1,31 @@
+import java.util.HashMap;
+import java.util.Map;
+
+public class tem {
+
+	public static void main(String args[])
+	{
+		 String var="Hi I am Java programer with Java";
+		 
+		 String varSplit[]=var.split(" ");
+		 
+		 Map<String,Integer> wordmap = new HashMap<String,Integer>();
+		 
+		 for (String varTemp : varSplit)
+		 {
+			 if (wordmap.containsKey(varTemp))
+			 {	 wordmap.put(varTemp,wordmap.get(varTemp)+1);}
+			 else
+			 { wordmap.put(varTemp,1);}
+		 }
+		 
+		 for (String i : wordmap.keySet())
+		 {
+			 if (wordmap.get(i)>1)
+			 System.out.println(i+  "  value is "+ wordmap.get(i) );
+		 }
+		 
+		 
+		 
+	}
+}

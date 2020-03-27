@@ -1,0 +1,4 @@
+[main] INFO  fmaven.mymaveen.App  - Started
+[main] INFO  fmaven.mymaveen.App  - Ended
+[main] DEBUG fmaven.mymaveen.Log4jPropertiesConfiguration  - Log4j appender configuration is successful !!
+[main] DEBUG fmaven.mymaveen.Log4jPropertiesConfiguration  - Log4j appender configuration is successful !!

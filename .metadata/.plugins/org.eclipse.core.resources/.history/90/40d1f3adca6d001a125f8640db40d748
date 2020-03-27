@@ -1,0 +1,5 @@
+package fmaven.mymaveen;
+
+public class Log4jPropertiesConfiguration {
+
+}
